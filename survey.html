@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자기 소개</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- 외부 스타일 적용 -->
+    </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- 내부 스타일 적용-->
+    <style>
+        #servey {
+            padding: 10px;
+            margin: 10px;
+            width: auto;
+            height: auto;
+
+        }
+        .box1 h2{
+            font-size: 1em;
+            line-height: 0.9em;
+
+        }
+        .box2{
+            height: auto;
+        }
+        fieldset{
+            margin: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li label{
+            width: 80px;
+            float: left;
+            font-size: 0.8em;
+        }
+        fieldset img{
+            width:10%;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        #btn{
+            text-align: center;
+        }
+        input[type=submit],input[type=reset]{
+            background-color: goldenrod;
+            color: rgb(255, 255, 255);
+            width: 44%;
+            margin-top: 1em;
+            padding: 10px;
+            border-radius: 10em;
+            /* 1em = 16px 모바일 - pc 간의 반응형 웹환경에서 쓰이는 단위*/
+        }
+    </style>
+    <body>
+        <!-- 시멘틱 태그 작성-->
+        <!-- 제목영역-->
+        <header>
+            <!-- 사진영역-->
+            <div id="h_1">
+                <img class ="pic" src="img/SDH.jpg" width="200">
+            </div>
+            <div id="h_2">    
+                <h1>성동환</h1>
+                <p id="h_3">
+                    Sung Dong Hwan
+                </p>
+            </div>
+        </header>
+        <!-- 메뉴 영역 (네비게이션바)-->
+        <nav> 
+            <a href="index.html">[개인정보] </a>&nbsp;&nbsp;|&nbsp;
+            <a href="index.html#s2">[학력사항] </a>&nbsp;&nbsp;|&nbsp;
+            <a href="index.html#s3">[자격사항] </a>&nbsp;&nbsp;|&nbsp;
+            <a href="index.html#s4">[자기소개] </a>&nbsp;&nbsp;&nbsp;
+            <a href="survey.html"> [설문조사]</a>
+        </nav>
+        <!--  설문 내용영역-->
+        <div class="survey">
+            <section id="survey">
+                <form name="myform" method="get" action="">
+                    <!-- 제목 영역-->
+                    <div class ="box1">
+                        <h2> 당신이 좋아하는 과일 을 선택해 보세요</h2>
+                    </div>
+                    <div clas="box2">
+                        <!-- 개인정보-->
+                        <fieldset>
+                            <legend>개인정보</legend>
+                            <ul>
+                                <li>
+                                    <label for="user_name">성명</label>
+                                    <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요">
+                                </li>
+                                <li>
+                                    <label for="user_pass">비밀번호</label>
+                                    <input type="password" name="user_pass" id="user_pass" placeholder="비밀번호를 입력하세요">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <!-- 과일 선택-->
+                        <fieldset>  
+                            <legend>좋아하는 과일을 선택해주세요</legend>
+                            <label>
+                                <input type="radio" name="fruit" id="fruit1" value="딸기">
+                                <img src="img/img1.png"
+                            </label>
+                            <label>
+                                <input type="radio" name="fruit" id="fruit2" value="바나나">
+                                <img src="img/img2.png"
+                            </label>
+                            <label>
+                                <input type="radio" name="fruit" id="fruit3" value="사과">
+                                <img src="img/img3.png"
+                            </label>
+                            <label>
+                                <input type="radio" name="fruit" id="fruit4" value="수박">
+                                <img src="img/img4.png"
+                            </label>
+                        </fieldset>
+                        <br>
+                        <div id="btn">
+                            <input type="submit" value="결과 보기">&nbsp;&nbsp;
+                            <input type="reset" value="취소">
+                        </div>
+                    </div>
+
+                </form>
+
+            </section>
+        </div>
+        <!-- 꼬리말 영역 -->
+        <footer>
+            <p>&copy; &nbsp; SDH AI활용 빅데이터분석 풀스택서비스 SW 개발자 양성과정 
+            </p>
+        </footer>
+        
+    </body>
+</html>

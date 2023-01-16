@@ -1,0 +1,131 @@
+* {
+    font-family: "맑은 고딕";
+
+}
+header,footer{
+    background-color: rgb(101, 69, 214);
+    color: whitesmoke;  
+    padding: 14px; 
+    width: auto;  
+}
+header>div{
+    float: left;
+    
+}
+header{
+    height: 340px;
+}
+header img{
+    border: 1px solid black;
+    border-radius: 65%;
+}
+header>#h_1{
+    margin: 10px;
+    border-radius: 90px;
+    /* width: 200px; */
+}
+header #h_2{
+    margin-top: 60px;
+    /* margin-left: 200px; */
+    text-align: left;
+    /* width:60%; */
+    
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    /* float: left; */
+
+}
+a:link,a:visited{
+    color: black;
+}
+a:hover,a:active{
+    color: aqua;
+    background-color: white;
+
+}
+footer{
+    clear: both;
+}
+nav{
+    margin-bottom: 4px;
+    text-align: center;
+    background-color: rgb(206, 136, 51);
+    color: rgb(151, 22, 151);
+    font-weight: bold;
+    padding: 12px;
+    clear: both;
+
+}
+.c1{
+    font-size: 24px;
+    border-style: solid solid solid double ;
+    border-width: 2px 2px 2px 5px;
+    border-color: brown,;
+    margin: 3px;
+    padding: 4px;
+}
+.survey {
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    font-size: 20px;
+    background-color: white;
+    margin: 2px;
+    width: auto;
+    height: auto;
+    border-bottom: 1px dotted;
+    /*float: left;*/
+}
+#s4{
+    margin-left: 4px;
+}
+#s1 ol{
+    list-style-type: none;
+}
+.c1_1{
+    font-size: 24px;
+    border-style: solid solid solid double ;
+    border-width: 0px 0px 0px 5px;
+    border-color: blue;
+    margin: 10px;
+}
+.c1_2{
+    font-size: 24px;
+    border-style: solid solid solid double ;
+    border-width: 0px 0px 0px 5px;
+    border-color:red;
+    margin: 10px;
+}
+.c1_3{
+    font-size: 24px;
+    border-style: solid solid solid double ;
+    border-width: 0px 0px 0px 5px;
+    border-color:aquamarine
+}
+.c1_4{
+    border-style: solid solid solid double ;
+    border-width: 0px 0px 0px 5px;
+    border-color: green;
+    font-size: 24px;
+}
+h1{ font-size: 32px;
+    border-width: 0px 0px 0px 5px;
+    border-color: brown,;
+    margin: 3px;
+}
+.c1_1, .c1_2, .c1_3, .c1_4{
+    paddng: 10px;
+}
+p {
+    margin: 20px;
+    line-height: 2em;
+}
+img{
+    margin:30px
+    
+}
